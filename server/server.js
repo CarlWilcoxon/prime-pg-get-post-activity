@@ -9,6 +9,7 @@ const books = require('./modules/books.route');
 // uses
 app.use( bodyParser.urlencoded( { extended: true } ) );
 app.use( express.static( 'server/public' ) );
+app.use('/books', books);
 
 const port = 5000;
 app.listen( port , () => {

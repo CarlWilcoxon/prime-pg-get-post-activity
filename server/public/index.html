@@ -6,14 +6,32 @@
   <script src="scripts/client.js"></script>
   <link rel="stylesheet" href="styles/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Paxos Bookstore</title>
 </head>
 <body>
   <header>
     <h1>
-      Express Intro
+      Parakeet Books
     </h1>
   </header>
+
+  <form id="bookForm">
+    <input type="text" name="title" id="bookTitleIn" placeholder="Please enter book title.">
+    <input type="text" name="author" id="bookAuthorIn" placeholder="Please enter book author.">
+    <input type="date" name="published" id="bookPublishedIn">
+    <button id="bookAddBtn">Submit</button>
+  </form>
   
+  <table id="bookList">
+    <thead>
+      <td>Title</td>
+      <td>Author</td>
+      <td>Date published</td>
+    </thead>
+    <tbody>
+      <!-- Books go here -->
+    </tbody>
+  </table>
+
 </body>
 </html>

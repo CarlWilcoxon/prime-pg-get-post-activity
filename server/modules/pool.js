@@ -2,7 +2,7 @@
 const pg = require( 'pg' );
 // globals
 const pool = new pg.Pool({
-    database: 'books',
+    database: 'bookstore',
     host: 'localhost',
     port: 5432,
     max: 15,

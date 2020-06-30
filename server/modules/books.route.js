@@ -18,10 +18,10 @@ router.get( '/', ( req, res )=>{
 
 router.post( '/', ( req, res )=>{
     console.log( 'in /books POST:', req.body );
-    let queryString = `INSERT INTO "books" ( "first_name", "last_name", "dob", "height" ) 
-        VALUES ( $1, $2, $3, $4 )`;
+    let queryString = `INSERT INTO "books" ( "title", "author", "published" ) 
+        VALUES ( $1, $2, $3 )`;
     pool.query( queryString, 
-        [ req.body.first_name, req.body.last_name , req.body.dob, req.body.height ] ).then( ( result )=>{
+        [ req.body.title, req.body.author , req.body.published ] ).then( ( result )=>{
             res.sendStatus( 201 );
         }).catch( ( err )=>{
             console.log( err );
