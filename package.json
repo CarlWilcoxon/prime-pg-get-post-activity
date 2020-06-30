@@ -1,0 +1,25 @@
+{
+  "name": "prime-pg-get-post-activity",
+  "version": "1.0.0",
+  "description": "``` ,________,         .------,          .------,         .------. |________|       ,'_____,'|        ,'_____,'|        (        ) |        |       |      | |        | ____ | |        |~------~| |        |       |      | |        | ____ | |        |~------~| |        |       |      | ;        | ____ | ;        |~------~| |________|       |______|'         |______|'         `.______.'  HTML/CSS          jQuery        Node / Express      PostgreSQL ``` Let's build a basic bookstore!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlWilcoxon/prime-pg-get-post-activity.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlWilcoxon/prime-pg-get-post-activity/issues"
+  },
+  "homepage": "https://github.com/CarlWilcoxon/prime-pg-get-post-activity#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "pg": "^8.2.1"
+  }
+}
