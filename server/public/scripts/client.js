@@ -7,6 +7,7 @@ function onReady() {
 
   //load books already in DB
   loadBooks();
+  loadMagazines();
   //setup click handlers
   $('#bookForm').on('click', '#bookAddBtn', addBook);
 }
@@ -53,6 +54,56 @@ function loadBooks() {
                   <td>${item.title}</td>
                   <td>${item.author}</td>
                   <td>${item.published}</td>
+              </tr>
+          `);
+      }
+  }).catch(function  (err) {
+    console.log('error:', err);
+  })
+}
+
+function addMagazine(event) {
+  let tempTitle = $('#magazineTitleIn').val();
+  let tempIssue = $('#magazineIssueNumberIn').val();
+  let tempPages = $('#magazinePagesIn').val();
+  
+  let newMagazine = {
+    title: tempTitle,
+    issue_number: tempIssue,
+    pages: tempPages
+  }
+
+  console.log('about to add book:', newMagazine);
+  $.ajax({
+    type: 'POST',
+    url: '/magazine',
+    data: newMagazine
+    //then, when you get a response, append a table row to the DOM with the info you received
+  }).then(function (response) {
+    console.log('Book added successfully.');
+    loadMagazines();
+  }).catch(function  (err) {
+    console.log('error:', err);
+  })
+  
+}
+
+function loadMagazines() {
+  $.ajax({
+    type: 'GET',
+    url: '/magazines'
+    //then, when you get a response, append a table row to the DOM with the info you received
+  }).then(function (response) {
+    $('#magazineList').children('tbody').empty();  
+    console.log(response);
+    for (let i = 0; i < response.length; i++) {
+          let item = response[i];
+          console.log('inside loop:', item);
+          $('#magazineList').children('tbody').append(`
+              <tr>
+                  <td>${item.title}</td>
+                  <td>${item.issue_number}</td>
+                  <td>${item.pages}</td>
               </tr>
           `);
       }
