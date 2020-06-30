@@ -45,12 +45,12 @@ Add a `magazines` table with columns for:
 
 Requirements
 
-- [ ] GET route to send back all magazines 
-- [ ] POST route to add a magazine
-- [ ] `index.html` page shows all magazines (Ajax GET)
-- [ ] page allows you to add a new magazine (Ajax POST)
-- [ ] Clear form on successful add of new magazine
-- [ ] Page should refresh with up to date data after new magazine added
+- [x] GET route to send back all magazines 
+- [x] POST route to add a magazine
+- [x] `index.html` page shows all magazines (Ajax GET)
+- [x] page allows you to add a new magazine (Ajax POST)
+- [x] Clear form on successful add of new magazine
+- [x] Page should refresh with up to date data after new magazine added
 
 ### Styling
 
