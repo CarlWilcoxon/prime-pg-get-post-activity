@@ -12,23 +12,21 @@ function onReady() {
 }
 
 function addBook(event) {
-  if (false) { //TODO add input validation
-  } else 
-  {event.preventDefault();}
-
-  let tempTitle = $('#bookTitleIn');
-  let tempAuthor = $('#bookAuthorIn');
-  let tempPublished = $('#bookPublishedIn');
+  let tempTitle = $('#bookTitleIn').val();
+  let tempAuthor = $('#bookAuthorIn').val();
+  let tempPublished = $('#bookPublishedIn').val();
+  
   let newBook = {
     title: tempTitle,
     author: tempAuthor,
     published: tempPublished
   }
 
+  console.log('about to add book:', newBook);
   $.ajax({
     type: 'POST',
     url: '/books',
-    data:newBook
+    data: newBook
     //then, when you get a response, append a table row to the DOM with the info you received
   }).then(function (response) {
     console.log('Book added successfully.');

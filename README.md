@@ -28,11 +28,11 @@ Add a `books` table with columns for:
 
 - [x] Express server setup w/ static files
 - [x] GET route to send back all books 
-- [ ] POST route to add a book
+- [x] POST route to add a book
 - [x] `index.html` page shows all books (Ajax GET)
-- [ ] page allows you to add a new book (Ajax POST)
-- [ ] Clear form on successful add of new book
-- [ ] Page should refresh with up to date data after new book added
+- [x] page allows you to add a new book (Ajax POST)
+- [x] Clear form on successful add of new book
+- [x] Page should refresh with up to date data after new book added
 
 ## Stretch Goals
 

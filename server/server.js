@@ -5,11 +5,13 @@ const express = require('express');
 const app = express();
 const bodyParser = require( 'body-parser' );
 const books = require('./modules/books.route');
+const magazines = require('./modules/magazines.route')
 
 // uses
 app.use( bodyParser.urlencoded( { extended: true } ) );
 app.use( express.static( 'server/public' ) );
 app.use('/books', books);
+app.use('/magazines', magazines);
 
 const port = 5000;
 app.listen( port , () => {
