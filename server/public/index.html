@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script src="vendors/bootstrap.min.js"></script>
   <script src="vendors/jquery-3.5.1.min.js"></script>
+  <script src="vendors/bootstrap.min.js"></script>
   <script src="scripts/client.js"></script>
   <link rel="stylesheet" href="styles/bootstrap.min.css">
   <link rel="stylesheet" href="styles/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paxos Bookstore</title>
 </head>
-<body>
+<body class="bg-primary">
   <header>
     <h1>
       Parakeet Books
@@ -19,7 +19,7 @@
 
   <form id="bookForm">
     <input type="text" name="title" id="bookTitleIn" placeholder="Please enter book title.">
-    <input type="text" name="author" id="bookAuthorIn" placeholder="Please enter book author.">
+    <input type="text" name="author" id="bookAuthorIn" placeholder="Please enter author.">
     <input type="date" name="published" id="bookPublishedIn">
     <button id="bookAddBtn">Submit</button>
   </form>
@@ -38,9 +38,9 @@
   </table>
 
   <form id="magazineForm">
-    <input type="text" name="title" id="magazineTitleIn" placeholder="Please enter magazine title.">
-    <input type="number" name="author" id="magazineIssueNumberIn" placeholder="Please enter issue number.">
-    <input type="number" name="published" id="magazinePagesIn" placeholder="Please enter number of pages">
+    <input type="text" name="title" id="magazineTitleIn" placeholder="Enter magazine title.">
+    <input type="number" name="author" id="magazineIssueNumberIn" placeholder="Enter issue number.">
+    <input type="number" name="published" id="magazinePagesIn" placeholder="Enter page count">
     <button id="magazineAddBtn">Submit</button>
   </form>
   
