@@ -27,9 +27,9 @@ Add a `books` table with columns for:
 ## Base Mode
 
 - [x] Express server setup w/ static files
-- [ ] GET route to send back all books 
+- [x] GET route to send back all books 
 - [ ] POST route to add a book
-- [ ] `index.html` page shows all books (Ajax GET)
+- [x] `index.html` page shows all books (Ajax GET)
 - [ ] page allows you to add a new book (Ajax POST)
 - [ ] Clear form on successful add of new book
 - [ ] Page should refresh with up to date data after new book added
